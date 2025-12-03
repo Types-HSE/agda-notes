@@ -10,7 +10,7 @@
 -- Agda docs: https://agda.readthedocs.io/en/latest/overview.html
 -- Cornelis reference: https://github.com/agda/cornelis/tree/master?tab=readme-ov-file
 
-module agda_sem1 where
+module agda-sem1 where
 
 -- Bool (Set = Type)
 -- Bool : Type

@@ -1,4 +1,4 @@
-module agda_sem2 where
+module agda-sem2 where
 
 
 -- MLTT (Martin-Lof type theory)
@@ -88,7 +88,7 @@ Sigma A B = Σ {A} B
 syntax Sigma A (λ x → b) = Σ x ꞉ A , b
 infix -1 Sigma
 
-open import agda_sem1 using (ℕ ; suc ; zero)
+open import agda-sem1 using (ℕ ; suc ; zero)
 
 D : 𝟚 → Set
 D 𝟎 = ℕ
