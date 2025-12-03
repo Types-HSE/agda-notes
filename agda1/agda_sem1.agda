@@ -50,18 +50,18 @@ idBool' = λ (x : Bool) → x
 -- :CornelisSolve C-c C-s
 
 -- polymorphic id
-id : (X : Set) → X → X
-id X x = x
+id'' : (X : Set) → X → X
+id'' X x = x
 
-t = id Bool true
+t = id'' Bool true
 
 -- implicit polymorphic id 
 id' : {X : Set} → X → X
 id' {X} x = x
 
 -- Implict 
-id'' : {X : Set} → X → X
-id'' x = x
+id : {X : Set} → X → X
+id x = x
 
 
 -- Naturals, ℕ = \bN, \nat
@@ -146,8 +146,8 @@ hyp {P} {Q} p = f where
 open import Data.Product using (_×_; _,_)
 
 -- If P and Q holds then also Q and P
-sym : {P Q : Set} → P × Q → Q × P
-sym (fst , snd) = snd , fst
+sym' : {P Q : Set} → P × Q → Q × P
+sym' (fst , snd) = snd , fst
 
 
 -- Dependent types
